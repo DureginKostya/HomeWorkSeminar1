@@ -2,9 +2,9 @@
 и выдаёт, какое число больше, а какое меньше.*/
 Console.Clear();
 Console.Write("Введите первое число: ");
-int numberFirst = int.Parse(Console.ReadLine()!);
+double numberFirst = double.Parse(Console.ReadLine()!);
 Console.Write("Введите второе число: ");
-int numberSecond = int.Parse(Console.ReadLine()!);
+double numberSecond = double.Parse(Console.ReadLine()!);
 if (numberFirst != numberSecond)
 {
     if (numberFirst > numberSecond)
