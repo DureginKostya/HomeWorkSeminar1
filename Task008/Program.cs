@@ -1,12 +1,12 @@
 ﻿/*Напишите программу, которая на вход принимает число (N), 
-а на выходе показывает все четные числа от 1 до N.*/
+а на выходе показывает все чётные числа от 1 до N.*/
 Console.Clear();
-Console.Write("Введите число больше нуля: ");
-int number = int.Parse(Console.ReadLine()!);
-if (number > 1)
+Console.Write("Введите число больше единицы: ");
+double number = double.Parse(Console.ReadLine()!);
+if (number >= 2)
 {
     int index = 2;
-    Console.Write($"Последовательность четных чисел от 1 до {number}:");
+    Console.Write($"Последовательность чётных чисел от 1 до {number}:");
     while (index <= number)
     {
         if (index % 2 == 0)
@@ -17,11 +17,11 @@ if (number > 1)
     }
     Console.WriteLine();
 }
-else if (number == 1)
+else if ((number > 1) && (number < 2))
     { 
-        Console.WriteLine("В последовательности четных чисел нет");
+        Console.WriteLine($"В последовательности чисел от 1 до {number}, чётных чисел нет");
     }
     else
     {
-        Console.WriteLine("Введено неправильное число");
+        Console.WriteLine("Введено недопустимое число");
     }
